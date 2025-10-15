@@ -4,23 +4,22 @@ import "./HomeCarousel.css";
 
 function HomeCarousel() {
   const movies = [
-    {
-      title: "Avengers: Endgame",
-      genre: "Action",
-      img: "https://m.media-amazon.com/images/I/81ExhpBEbHL._AC_SL1500_.jpg"
-    },
-    {
-      title: "Frozen II",
-      genre: "Animation",
-      img: "https://m.media-amazon.com/images/I/71niXI3lxlL._AC_SL1500_.jpg"
-    },
-    {
-      title: "Joker",
-      genre: "Drama",
-      img: "https://m.media-amazon.com/images/I/71oN5f2Xv0L._AC_SL1024_.jpg"
-    }
-  ];
-
+  {
+    title: "Basic Instinct",
+    genre: "Erotic Thriller",
+    img: "https://upload.wikimedia.org/wikipedia/commons/2/20/Basic_Instinct_Cannes_1992.jpg"
+  },
+  {
+    title: "9½ Weeks",
+    genre: "Erotic Romance",
+    img: "https://upload.wikimedia.org/wikipedia/en/4/49/Nine-12-weeks-theatrical-movie-poster-md.jpg"
+  },
+  {
+    title: "Secretary",
+    genre: "Erotic Romance/Drama",
+    img: "https://upload.wikimedia.org/wikipedia/en/9/91/Secretary_%282002%29.png"
+  }
+];
   return (
     <Carousel fade interval={3000} controls indicators>
       {movies.map((movie, index) => (

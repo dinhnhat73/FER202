@@ -8,7 +8,7 @@ function MyFooter({ author, email, linkGithub }) {
       <p>Created by: {email}</p>
       <p>&copy; {new Date().getFullYear()} {author}. All rights reserved.</p>
       <Button variant="link" href="#">
-        My Link Github: {linkGithub}
+        My Link Github: {"https://github.com/dinhnhat73/FER202"}
       </Button>
     </footer>
   );
