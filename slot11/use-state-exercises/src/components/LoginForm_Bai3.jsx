@@ -1,42 +1,27 @@
-// src/components/LoginForm.jsx
 import React, { useState } from 'react';
-import { Form, Button, Card, Alert, Modal } from 'react-bootstrap';
+import { Form, Button, Card, Modal } from 'react-bootstrap';
 
-function LoginForm() {
-  // Cách 1: Quản lý state riêng lẻ (Bài 3)
-  // const [username, setUsername] = useState('');
-  // const [password, setPassword] = useState('');
-
-  // Cách 2: Quản lý state bằng object (Bài 4 - Khuyến khích)
-  const [formData, setFormData] = useState({
-    username: '',
-    password: ''
-  });
+function LoginForm_Bai3() {
+  // Quản lý state riêng lẻ cho từng input
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   
   const [errors, setErrors] = useState({});
   const [showModal, setShowModal] = useState(false);
   
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const newErrors = {};
-    if (!formData.username) {
+    if (!username) {
       newErrors.username = 'Vui lòng nhập tên đăng nhập.';
     }
-    if (!formData.password) {
+    if (!password) {
       newErrors.password = 'Vui lòng nhập mật khẩu.';
     }
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      console.log('Form Submitted:', formData);
+      console.log('Form Submitted:', { username, password });
       setShowModal(true);
     }
   };
@@ -47,15 +32,15 @@ function LoginForm() {
     <>
       <Card style={{ width: '25rem', margin: '20px auto' }}>
         <Card.Body>
-          <Card.Title>Đăng nhập</Card.Title>
+          <Card.Title>Đăng nhập (State riêng lẻ)</Card.Title>
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3">
               <Form.Label>Tên đăng nhập</Form.Label>
               <Form.Control 
                 type="text"
                 name="username"
-                value={formData.username}
-                onChange={handleChange}
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
                 isInvalid={!!errors.username}
               />
               <Form.Control.Feedback type="invalid">
@@ -68,8 +53,8 @@ function LoginForm() {
               <Form.Control 
                 type="password"
                 name="password"
-                value={formData.password}
-                onChange={handleChange}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 isInvalid={!!errors.password}
               />
               <Form.Control.Feedback type="invalid">
@@ -99,4 +84,4 @@ function LoginForm() {
   );
 }
 
-export default LoginForm;
+export default LoginForm_Bai3;
