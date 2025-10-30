@@ -1,0 +1,10 @@
+{
+  "accounts": [
+    { "id": 1, "username": "admin", "password": "123456" },
+    { "id": 2, "username": "user", "password": "user123" }
+  ],
+  "movies": [
+    { "id": 1, "title": "Galactic Wars", "year": 2022, "genreId": 1, "duration": 132 },
+    { "id": 2, "title": "Laugh Out Loud", "year": 2021, "genreId": 2, "duration": 105 }
+  ]
+}

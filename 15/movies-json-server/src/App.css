@@ -1,0 +1,109 @@
+/* 🌗 Toàn bộ giao diện hỗ trợ light/dark mode */
+:root {
+  --bg-color: #f8f9fa;
+  --card-bg: #ffffff;
+  --text-color: #222;
+  --title-color: #007bff;
+}
+
+body.dark {
+  --bg-color: #1e1e1e;
+  --card-bg: #2c2c2c;
+  --text-color: #f8f9fa;
+  --title-color: #0dcaf0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* 🌈 Tiêu đề chính */
+h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+/* 🪄 Card phim */
+.card {
+  transition: all 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* 📸 Ảnh phim có hiệu ứng zoom */
+.card-img-top {
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.08);
+}
+
+/* 🔘 Nút bấm */
+.btn {
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #212529;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #bb2d3b;
+}
+
+/* 🎬 Form thêm phim */
+form {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+form input,
+form select {
+  border-radius: 10px !important;
+}
+
+/* 🌗 Dark Mode Toggle */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  background: var(--title-color);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.theme-toggle:hover {
+  background: #198754;
+}

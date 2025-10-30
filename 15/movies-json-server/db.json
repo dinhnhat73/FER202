@@ -1,0 +1,51 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Avengers: Endgame",
+      "year": 2019,
+      "duration": 181,
+      "genreId": 1,
+      "avatar": "https://m.media-amazon.com/images/I/81ExhpBEbHL._AC_SY679_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Titanic",
+      "year": 1997,
+      "duration": 195,
+      "genreId": 2,
+      "avatar": "https://m.media-amazon.com/images/I/71yAzKQW+uL._AC_SY679_.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Inception",
+      "year": 2010,
+      "duration": 148,
+      "genreId": 3,
+      "avatar": "https://m.media-amazon.com/images/I/51nbVEuw1HL._AC_.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Joker",
+      "year": 2019,
+      "duration": 122,
+      "genreId": 3,
+      "avatar": "https://m.media-amazon.com/images/I/81F0PLJwQ0L._AC_SY679_.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Frozen II",
+      "year": 2019,
+      "duration": 103,
+      "genreId": 4,
+      "avatar": "https://m.media-amazon.com/images/I/71pVnGQ+2jL._AC_SY679_.jpg"
+    }
+  ],
+  "genres": [
+    { "id": 1, "name": "Hành động" },
+    { "id": 2, "name": "Tình cảm" },
+    { "id": 3, "name": "Khoa học viễn tưởng" },
+    { "id": 4, "name": "Hoạt hình" },
+    { "id": 5, "name": "Tâm lý" }
+  ]
+}
