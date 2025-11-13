@@ -29,4 +29,6 @@ export const updateMovie = async (movie) => {
 // Xóa phim
 export const deleteMovie = async (id) => {
   await axios.delete(`${API_URL}/movies/${id}`);
+
 };
+                
