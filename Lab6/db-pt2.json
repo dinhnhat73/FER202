@@ -1,0 +1,73 @@
+{
+  "accounts": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "fullName": "Admin User",
+      "role": "admin",
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "username": "user1",
+      "email": "u1@example.com",
+      "password": "user1234",
+      "fullName": "User One",
+      "role": "user",
+      "status": "active"
+    },
+    {
+      "id": "3",
+      "username": "user2",
+      "email": "u2@example.com",
+      "password": "user1234",
+      "fullName": "User Two",
+      "role": "user",
+      "status": "banned"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "fullName": "Admin User",
+      "role": "admin",
+      "status": "active",
+      "avatar": ""
+    },
+    {
+      "id": "2",
+      "username": "user1",
+      "fullName": "User One",
+      "role": "user",
+      "status": "active",
+      "avatar": ""
+    },
+    {
+      "id": "3",
+      "username": "user2",
+      "fullName": "User Two",
+      "role": "user",
+      "status": "banned",
+      "avatar": ""
+    }
+  ],
+  "payments": [
+    {
+      "id": "1",
+      "userId": 2,
+      "amount": 200,
+      "date": "2025-11-01",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "2",
+      "userId": 3,
+      "amount": 150,
+      "date": "2025-10-15",
+      "status": "PENDING"
+    }
+  ]
+}
